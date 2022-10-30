@@ -22,7 +22,30 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-const sections = document.querySelectorAll('section[id]')
+
+
+function sendmail() {
+    var params ={
+         name: document.getElementById("name").value,
+         email: document.getElementById("email").value,
+         message: document.getElementById("message").value,
+    };
+     
+
+
+    const serviceID = "service_qmkgbbo";
+    const templateID = "template_0b74led";
+
+    emailjs.send(serviceID, templateID, params).then((res) => {
+        document.getElementById("name").value="";
+        document.getElementById("name").value="";
+        document.getElementById("name").value="";
+        console.log(res);
+        alert("Your message sent successfully");
+    })
+    .catch((err)=> console.log(err));
+}
+
 
 function scrollActive(){
     const scrollY = window.pageYOffset

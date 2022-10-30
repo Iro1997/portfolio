@@ -235,7 +235,7 @@ img {
 }
 
 .home__blob-img {
-  width: 360px;
+  width: 370px;
 }
 
 /*BUTTONS*/
@@ -332,7 +332,7 @@ img {
 }
 
 .skills__ux {
-  width: 85%;
+  width: 60%;
 }
 
 .skills__img {
@@ -454,6 +454,11 @@ img {
     width: 360px;
     padding-top: 2rem;
   }
+
+  .form-control{
+    
+  }
+
   .contact__container {
     justify-items: center;
   }
